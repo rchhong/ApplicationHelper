@@ -1,7 +1,8 @@
 
 let urls = {
     "LinkedIn" : "https://www.linkedin.com/in/ryan-chhong-115287154/",
-    "Portfolio" : "https://rchhong.com/"
+    "Portfolio" : "https://rchhong.com/",
+    "GitHub" : "https://github.com/InfernalHydra"
 }
 
 chrome.runtime.onInstalled.addListener(() => {

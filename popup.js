@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     let urls = {
         "linkedin" : "https://www.linkedin.com/in/ryan-chhong-115287154/",
-        "portfolio" : "https://rchhong.com/"
+        "portfolio" : "https://rchhong.com/",
+        "github" : "https://github.com/InfernalHydra"
     }
 
     Object.keys(urls).forEach((key) => {
@@ -10,9 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
         let scratch = document.getElementById("scratch");
 
         element.addEventListener('click', () => {
-            scratch.innerHTML = urls[key];
-            console.log(scratch.innerHTML);
-            scratch.querySelector()
+            scratch.value = urls[key];
+            let copyText = document.querySelector("#scratch");
+            copyText.select();
+            document.execCommand("copy");
         });
     })
 
