@@ -4,17 +4,17 @@
     "description" : "Application Helper",
     "permissions" : ["contextMenus"],
     "background" : {
-        "scripts" : ["background.js"],
+        "scripts" : ["dist/background.js"],
         "persistent" : false
     },
     "content_scripts" : [
         {
             "matches" : ["http://*/*", "https://*/*"],
-            "js" : ["contentScript.js"]
+            "js" : ["dist/contentScript.js"]
         }
     ],
     "browser_action" : {
-        "default_popup" : "popup.html",
+        "default_popup" : "dist/popup.html",
         "default_icon" : {
             "16" : "images/16.png",
             "32" : "images/32.png",
