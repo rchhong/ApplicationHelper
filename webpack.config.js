@@ -7,6 +7,7 @@ module.exports = [
         entry: {
             background : './src/background.js',
             contentScript : './src/contentScript.js',
+            popup : './src/popup.js',
         },
         output : {
             path : path.resolve(__dirname, "dist"),
@@ -15,7 +16,7 @@ module.exports = [
         plugins : [
             new CopyPlugin({
                 patterns : [
-                    {from : "./src/popup.*", to : "[name].[ext]"}
+                    {from : "./src/popup.html", to : "[name].[ext]"}
                 ]
             })
         ]
